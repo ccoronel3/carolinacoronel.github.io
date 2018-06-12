@@ -1,0 +1,191 @@
+body{
+
+  #menu_principal{
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2.5%;
+    transition: all 0.3s;
+
+    .navbar-brand{
+      color: rgba(255,255,255,1);
+
+      &:hover{
+        cursor: pointer;
+      }
+
+    }
+
+    .navbar-toggler{
+      border: none;
+
+      &:hover{
+        cursor: pointer;
+      }
+
+      span{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+
+    }//Fin .navbar-toggler
+
+    #itemsMenuPrincipal,
+    #contacto-rapido{
+
+      &#contacto-rapido{
+        text-align: left;
+        .flag{
+          img{
+            height: 25px;
+          }
+        }
+      }//Fin &.#contacto-rapido
+
+      .nav-item{
+
+        &:hover{
+          cursor: pointer;
+        }
+
+        .nav-link{
+          color: rgba(255,255,255,1);
+          transition: all 0.3s;
+
+          &:hover{
+            color: rgba(255,255,255,0.8);
+          }
+
+          svg{
+            font-size: 28px;
+          }
+
+        }//Fin .nav-link
+
+      }//Fin .nav-item
+
+      @media (max-width: 991px){
+
+        &#contacto-rapido{
+          display: flex;
+          flex-direction: row;
+
+          li{
+            /*padding-left: .5rem;
+            padding-right: .5rem;*/
+
+            &:nth-child(1),
+            &:nth-child(2){
+              display: none;
+            }
+
+          }
+
+        }//Fin &#contacto-rapido
+
+      }
+
+    }//Fin #itemsMenuPrincipal
+
+    &.scrollOn{
+      background-color: rgba(0,0,0,0.8);
+      padding-top: 0.8%;
+    }
+
+    @media (max-width: 360px){
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+  }//Fin #menu_principal
+
+  #page-holder{
+
+    .wrapper-inicio{
+      padding: 0px;
+
+      #inicio{
+        background-attachment: fixed;
+        background-image: url("../images/background_inicio.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+
+        .text-1,
+        .text-2{
+          color:rgba(255,255,255,1);
+
+          &.text-1{
+            font-style: italic;
+            font-size: 1.6em;
+          }
+
+          &.text-2{
+            font-size: 3em;
+          }
+
+        }
+
+      }//Fin #inicio
+
+    }//Fin .wrapper-inicio
+
+    #sobre-mi{
+      padding-bottom: 50px;
+      padding-top: 50px;
+
+      #ttl_AboutMe{
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .container{
+
+        > .row{
+
+          > div[class*='col-']{
+            padding-bottom: 15px;
+            padding-top: 15px;
+
+          }
+        }
+      }//Fin .container
+
+    }//Fin
+
+  }//Fin #page-holder
+
+  .popover{
+
+    .arrow {
+      &::after{
+        border-bottom-color:rgba(255, 255, 255, 0.1);
+      }
+      &::before{
+        border-bottom-color:rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .popover-body{
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 4px;
+
+      .bandera{
+
+        &:nth-child(1){
+          margin-bottom: 5px;
+        }
+
+        img{
+          width: 40px;
+
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+
+    }
+
+  } //Fin .popover
+
+}//Fin body
